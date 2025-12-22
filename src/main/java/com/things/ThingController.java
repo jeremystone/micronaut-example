@@ -15,7 +15,6 @@ public class ThingController {
 
     final ThingService thingService;
 
-    @Inject
     public ThingController(ThingService thingService) {
         this.thingService = thingService;
     }

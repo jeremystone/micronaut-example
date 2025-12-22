@@ -59,6 +59,11 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
+            <groupId>io.projectreactor</groupId>
+            <artifactId>reactor-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>io.micronaut.rabbitmq</groupId>
             <artifactId>micronaut-rabbitmq</artifactId>
             <scope>compile</scope>
@@ -101,7 +106,7 @@
         <dependency>
             <groupId>org.mongodb</groupId>
             <artifactId>mongodb-driver-sync</artifactId>
-            <scope>runtime</scope>
+            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>io.micronaut.testresources</groupId>

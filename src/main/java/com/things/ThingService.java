@@ -10,7 +10,6 @@ public class ThingService {
     final ThingRepository repository;
     final ThingMapper mapper;
 
-    @Inject
     public ThingService(ThingRepository repository, ThingMapper mapper) {
         this.repository = repository;
         this.mapper = mapper;
