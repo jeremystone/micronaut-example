@@ -1,6 +1,5 @@
 package com.things;
 
-import jakarta.inject.Inject;
 import jakarta.inject.Singleton;
 
 import java.util.Optional;

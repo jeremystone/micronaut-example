@@ -1,14 +1,15 @@
 package com.events;
 
+import io.micronaut.messaging.Acknowledgement;
 import io.micronaut.messaging.annotation.MessageHeader;
 import io.micronaut.rabbitmq.annotation.Queue;
-import io.micronaut.rabbitmq.annotation.RabbitClient;
+import io.micronaut.rabbitmq.annotation.RabbitListener;
 import jakarta.inject.Singleton;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Sinks;
 
 @Singleton
-@RabbitClient("event")
+@RabbitListener
 public class QueueListener {
 
     public record ReceivedEvent(String correlationId, Event event){
